@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="COVID-19 Test Places" />
+    <meta property="og:description" content="List of COVID 19 Test Places in Bangladesh" />
+    <meta property="og:url" content="https://triptoafsin.github.io/TexQuiz" />
+    <meta property="og:site_name" content="COVID-19 Test Places" />
+    <meta property="og:image" content="https://i.imgur.com/x6u0ksi.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fav.png">
+    <title>COVID-19 Test Places(BD)</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <p class="header"> COVID-19 Test in BD</p>
+        <div class="search-bar">
+            <div class="search-ui">
+                <input type="text" name="search" value="" placeholder="Type to Search" autocomplete="off" id="inpttxt" onkeyup="search();">
+            </div>   
+        </div>
+        <ul class="list" id="list" type="none">
+            <li class="list-a"><a href="#" id="l1" onclick="show1();" class="list-a">Disease Control and Research or IEDCR,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close1();" class="info" id="banner"></a>
+                    </div>
+                    <div>
+                        <a href="#" id="phoneInfo1" class="num"></a>
+                    <a href="" id="phoneInfo2" class="num"></a>
+                    <a href="" id="phoneInfo3" class="num"></a>
+                    </div>
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show2();" class="list-a">Institute of Public Health,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close2();" class="info" id="banner2"></a>
+                    </div>
+                    <p id="no1"></p>
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show3();" class="list-a">Dhaka Shishu (Children) Hospital,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close3();" class="info" id="banner3"></a>
+                    </div>
+                        <a href="#" id="phoneInfo13" class="num"></a>  
+                </div>
+            </li>
+            
+            <li class="list-a"><a href="#" onclick="show4();" class="list-a" >Dhaka Medical College Hospital,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close4();" class="info" id="banner4"></a>
+                    </div>
+                        <a href="#" id="phoneInfo14" class="num"></a>
+                        <a href="#" id="phoneInfo24" class="num"></a>
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show5();" class="list-a" >Sir Salimullah Medical College Hospital,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close5();" class="info" id="banner5"></a>
+                    </div>
+                        <a href="#" id="phoneInfo15" class="num"></a>
+                        <a href="#" id="phoneInfo25" class="num"></a>
+                </div>
+            </li>
+            
+            <li class="list-a"><a href="#" onclick="show6();" class="list-a">Kuwait-Bangladesh Government Friendship,Dhaka</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close6();" class="info" id="banner6"></a>
+                    </div>
+                        <a href="#" id="phoneInfo16" class="num"></a>  
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show7();" class="list-a">Bangladesh Institute of Tropical and Infectious Diseases(BITID),Faujdarhat,Chattogram</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close7();" class="info" id="banner7"></a>
+                    </div>
+                        <a href="#" id="phoneInfo17" class="num"></a>
+                        <a href="#" id="phoneInfo27" class="num"></a>
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show8();" class="list-a">Cox’s Bazar Medical College,Cox's Bazar</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close8();" class="info" id="banner8"></a>
+                    </div>
+                        <a href="#" id="phoneInfo18" class="num"></a>  
+                </div>
+            </li>
+            <li class="list-a"><a href="#" onclick="show9();" class="list-a">Mymensingh Medical College Hospital</a>
+                <div class="content-1" id="con1">
+                    <div class="banner-conatiner">
+                        <a href="#" onclick="close7();" class="info" id="banner9"></a>
+                    </div>
+                        <a href="#" id="phoneInfo19" class="num"></a>
+                        <a href="#" id="phoneInfo29" class="num"></a>
+                </div>
+            </li>
+        </ul>
+        <div class="btn-container">
+            <ul type="none" class="btn-footer-list">
+                <li><a href="https://forms.gle/7d9Ds6iVvouZAeXw9" target="blank" class="sub-btn"> Submit more Hospitals</a></li>
+                <li><a href="tel:+88010655" class="sub-btn">National Hotline</a></li>
+            </ul>
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
